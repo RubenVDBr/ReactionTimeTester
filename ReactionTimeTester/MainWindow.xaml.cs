@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReactionTimeTester.lib;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,14 @@ namespace ReactionTimeTester
 {
     public partial class MainWindow : Window
     {
+
+        Helper _helper = new Helper();
         public MainWindow()
         {
             InitializeComponent();
 
-            HideWithStartup();
+            //HideWithStartup();
+            FillComboBoxWithIps();
         }
 
         private void HideWithStartup()
@@ -29,11 +33,24 @@ namespace ReactionTimeTester
             throw new NotImplementedException();
         }
 
+        private void FillComboBoxWithIps()
+        {
+            var ipList = _helper.GetActiveIP4s();
+
+            foreach(var ip in ipList)
+            {
+                cmbIpAdresses.Items.Add(ip);
+            }
+        }
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
     }
 }
