@@ -20,6 +20,18 @@ namespace ReactionTimeTester
         public MainWindow()
         {
             InitializeComponent();
+
+            HideWithStartup();
+        }
+
+        private void HideWithStartup()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
 
