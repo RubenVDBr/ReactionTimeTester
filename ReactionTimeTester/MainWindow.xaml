@@ -17,5 +17,6 @@
         <Button x:Name="btnRules" Content="Check Rules" HorizontalAlignment="Left" Margin="27,217,0,0" VerticalAlignment="Top" Height="29" Width="89"/>
         <Label x:Name="lblRules" Content="rules" HorizontalAlignment="Left" Margin="27,292,0,0" VerticalAlignment="Top" Height="85" Width="210"/>
         <Button x:Name="btnHighscores" Content="Check Highscores" HorizontalAlignment="Left" Margin="148,217,0,0" VerticalAlignment="Top" Height="29" Width="89"/>
+        <ComboBox x:Name="cmbIpAdresses" Margin="146,21,487,369"/>
     </Grid>
 </Window>
