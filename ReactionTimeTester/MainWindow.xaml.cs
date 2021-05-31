@@ -1,4 +1,5 @@
 ﻿using ReactionTimeTester.lib;
+using ReactionTimeTester.lib.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,8 +44,13 @@ namespace ReactionTimeTester
             }
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void bevestig_Click(object sender, RoutedEventArgs e)
         {
+            var newUser = new User
+            {
+                UserName = txtUsername.Text
+            };
+            lblUserName.Content = newUser.UserName;
 
         }
 

@@ -10,7 +10,7 @@
         <Button x:Name="btnServerConnect" Content="Connect to server" HorizontalAlignment="Left" Margin="27,21,0,0" VerticalAlignment="Top" Height="24" Width="119"/>
         <Label x:Name="lblUsername" Content="Username:" HorizontalAlignment="Left" Margin="27,78,0,0" VerticalAlignment="Top" Height="28" Width="74"/>
         <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="101,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="28"/>
-        <Button x:Name="btnConfirmName" Content="Bevestig" HorizontalAlignment="Left" Margin="173,122,0,0" VerticalAlignment="Top" Height="24" Width="64" Click="button_Click"/>
+        <Button x:Name="btnConfirmName" Content="Bevestig" HorizontalAlignment="Left" Margin="173,122,0,0" VerticalAlignment="Top" Height="24" Width="64" Click="bevestig_Click"/>
         <Button x:Name="btnStartGame" Content="Start Game" HorizontalAlignment="Left" Margin="318,18,0,0" VerticalAlignment="Top" Height="27" Width="82"/>
         <Button x:Name="btnGameField" Content="" HorizontalAlignment="Left" Margin="318,134,0,0" VerticalAlignment="Top" Height="224" Width="429" Background="Gray"/>
         <Label x:Name="lblInstructions" Content="" HorizontalAlignment="Left" Margin="318,78,0,0" VerticalAlignment="Top" Height="37" Width="150"/>
@@ -18,5 +18,7 @@
         <Label x:Name="lblRules" Content="rules" HorizontalAlignment="Left" Margin="27,292,0,0" VerticalAlignment="Top" Height="85" Width="210"/>
         <Button x:Name="btnHighscores" Content="Check Highscores" HorizontalAlignment="Left" Margin="148,217,0,0" VerticalAlignment="Top" Height="29" Width="89"/>
         <ComboBox x:Name="cmbIpAdresses" Margin="146,21,487,369"/>
+        <Label x:Name="lblUserName" Content="" Margin="473,57,192,305"/>
+        <Label Content="UserName:" Margin="473,21,112,358"/>
     </Grid>
 </Window>
